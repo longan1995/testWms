@@ -74,12 +74,13 @@ public class warehouseMangement {
      * 仓库管理
      *
      * */
-    @Test(priority = 32)
+    @Test(priority = 3)
     public void warehouseManagement(){
         WebDriverWait wait = new WebDriverWait(webDriver,10);
         WebElement oms = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(warehouseManagement.getWarehouseHtml())));
         oms.click();
     }
+
     @AfterClass
     public void quitEnv(){
         webDriver.quit();
